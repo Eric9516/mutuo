@@ -5,7 +5,10 @@ const AboutUs = () => {
     return (
         <StyledDiv>
             <StyledChildDiv>
-                <Styledh3>Somos una empresa exclusiva de préstamos personales en efectivo y en el acto. Cuotas fijas y en pesos.</Styledh3>
+                <Styledh3>
+                    Somos una empresa exclusiva de préstamos personales en efectivo y en el acto.
+                    <br /> Cuotas fijas y en pesos.
+                </Styledh3>
             </StyledChildDiv>
         </StyledDiv>
     );

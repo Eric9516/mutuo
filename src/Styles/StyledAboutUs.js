@@ -4,7 +4,7 @@ import image from "../img/leon.png";
 export const StyledDiv = styled.div`
     width: 100vw;
     height: 90vh;
-    background-color: darkblue;
+    background-color: rgb(230, 228, 228);
     background-image: url(${image});
     background-size: 500px;
     background-repeat: no-repeat;
@@ -55,14 +55,14 @@ export const StyledChildDiv = styled.div`
     &::after {
         top: -1px;
         left: -1px;
-        border-top: 5px solid #fff;
-        border-left: 5px solid #fff;
+        border-top: 5px solid #e98b0f;
+        border-left: 5px solid #e98b0f;
     }
     &::before {
         bottom: -1px;
         right: -1px;
-        border-bottom: 5px solid #fff;
-        border-right: 5px solid #fff;
+        border-bottom: 5px solid #e98b0f;
+        border-right: 5px solid #e98b0f;
     }
 
     @keyframes borde {
@@ -84,7 +84,7 @@ export const StyledChildDiv = styled.div`
     }
 `;
 export const Styledh3 = styled.h3`
-    color: #fff;
+    color: darkblue;
     font-size: 2.5em;
     padding: 20px;
 

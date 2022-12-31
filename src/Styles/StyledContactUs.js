@@ -8,6 +8,10 @@ export const StyledDiv = styled.div`
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     @media screen and (max-width: 1100px) {
         background-color: rgb(230, 228, 228);
@@ -33,9 +37,28 @@ export const StyledForm = styled(Form)`
 `;
 
 export const Myh2 = styled.h2`
+    width: 12ch;
+    margin-top: 20px;
     text-align: center;
-    padding-top: 20px;
+    font-family: monospace;
     color: rgb(55, 55, 141);
+    border-right: 4px solid rgb(55, 55, 141);
+    animation: tipyng 2s steps(12), blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+
+    @keyframes tipyng {
+        from {
+            width: 0;
+        }
+        to {
+            width: 12ch;
+        }
+    }
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
 `;
 
 export const StyledButton = styled(Button)`

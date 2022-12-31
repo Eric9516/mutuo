@@ -38,7 +38,7 @@ const ContactUs = () => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Antigüedad</Form.Label>
-                    <StyledFormControl type="number" />
+                    <StyledFormControl type="text" />
                 </Form.Group>
                 <hr></hr>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
