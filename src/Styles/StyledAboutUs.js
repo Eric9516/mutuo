@@ -12,14 +12,14 @@ export const StyledDiv = styled.div`
     padding: 20px;
 
     @media screen and (min-width: 1800px) {
-        background-color: darkblue;
+        background-color: rgb(230, 228, 228);
         background-image: url(${image});
         background-repeat: no-repeat;
         background-position: bottom left;
         background-size: 700px;
     }
     @media screen and (max-width: 960px) {
-        background-color: darkblue;
+        background-color: rgb(230, 228, 228);
         background-image: url(${image});
         background-repeat: no-repeat;
         background-position: bottom left;
