@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Form, Button, FormControl } from "react-bootstrap";
-import image from "../img/leon.png";
+import image from "../img/leon2.png";
 
 export const StyledDiv = styled.div`
     background-color: rgb(230, 228, 228);

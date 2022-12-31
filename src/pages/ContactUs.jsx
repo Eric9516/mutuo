@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import { StyledForm, Myh2, StyledButton, StyledFormControl, StyledDiv } from "../Styles/StyledForm.js";
+import { StyledForm, Myh2, StyledButton, StyledFormControl, StyledDiv } from "../Styles/StyledContactUs.js";
 
 const ContactUs = () => {
     return (
