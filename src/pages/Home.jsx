@@ -9,12 +9,9 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { StyledDivContainer, StyledDivChild, StyledTittle, StyledAllHome, StyledLogoWhatsapp } from "../Styles/StyledHome";
 
 const Home = () => {
-    const whatsapp = () => {
-        window.location.href = "google.com";
-    };
     return (
         <StyledAllHome>
-            <StyledTittle className="home">Por que elegirnos?</StyledTittle>
+            <StyledTittle className="home">Por qué elegirnos?</StyledTittle>
             <StyledDivContainer>
                 <StyledDivChild>
                     <BsFillStopwatchFill size="4em" />
@@ -50,7 +47,9 @@ const Home = () => {
                 </StyledDivChild>
             </StyledDivContainer>
             <StyledLogoWhatsapp>
-                <RiWhatsappFill color="green" size="lg" onClick={whatsapp} />
+                <a href="https://wa.link/ubocaj .">
+                    <RiWhatsappFill color="green" size="lg" />
+                </a>
             </StyledLogoWhatsapp>
         </StyledAllHome>
     );

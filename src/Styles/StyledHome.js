@@ -21,14 +21,19 @@ export const StyledDivContainer = styled.div`
 
 export const StyledDivChild = styled.div`
     width: 20vw;
+    height: 40vh;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
 `;
 
 export const StyledTittle = styled.h3`
     text-align: center;
+    padding-top: 20px;
 `;
 
 export const StyledLogoWhatsapp = styled.div`

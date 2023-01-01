@@ -9,15 +9,17 @@ import AboutUs from "./pages/AboutUs";
 
 const App = () => {
     return (
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about-us" element={<AboutUs />} />
-                <Route path="/contact-us" element={<ContactUs />} />
-                <Route path="/sign-up" element={<SignUp />} />
-            </Routes>
-        </Router>
+        <>
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about-us" element={<AboutUs />} />
+                    <Route path="/contact-us" element={<ContactUs />} />
+                    <Route path="/sign-up" element={<SignUp />} />
+                </Routes>
+            </Router>
+        </>
     );
 };
 
