@@ -3,8 +3,8 @@ import image from "../img/leon.png";
 
 export const StyledDiv = styled.div`
     width: 100vw;
-    height: 90vh;
-    background-color: rgb(230, 228, 228);
+    height: 100vh;
+    background-color: #fff;
     background-image: url(${image});
     background-size: 500px;
     background-repeat: no-repeat;
@@ -12,14 +12,14 @@ export const StyledDiv = styled.div`
     padding: 20px;
 
     @media screen and (min-width: 1800px) {
-        background-color: rgb(230, 228, 228);
+        bbackground-color: #fff;
         background-image: url(${image});
         background-repeat: no-repeat;
         background-position: bottom left;
-        background-size: 700px;
+        background-size: 600px;
     }
     @media screen and (max-width: 960px) {
-        background-color: rgb(230, 228, 228);
+        background-color: #fff;
         background-image: url(${image});
         background-repeat: no-repeat;
         background-position: bottom left;

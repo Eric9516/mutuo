@@ -4,7 +4,7 @@ import { StyledDiv, StyledForm, StyledFormControl, StyledButton, Myh2 } from "..
 
 const ContactUs = () => {
     return (
-        <StyledDiv>
+        <StyledDiv id="contactUs">
             <Myh2>Contactanos</Myh2>
             <StyledForm>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

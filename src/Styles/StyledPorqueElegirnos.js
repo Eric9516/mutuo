@@ -3,11 +3,15 @@ import fondo from "../img/fondo2.jpg";
 
 export const StyledAllHome = styled.div`
     background-color: rgb(230, 228, 228);
-    min-height: 140vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: 1800px) {
+        gap: 35px;
+    }
 `;
 
 export const StyledDivContainer = styled.div`
@@ -45,6 +49,12 @@ export const StyledDivChild = styled.div`
         transform: scale(1.1);
     }
 
+    @media screen and (min-width: 1800px) {
+        width: 15vw;
+        height: 30vh;
+        gap: 20px;
+    }
+
     @media screen and (max-width: 700px) {
         width: 65vw;
         height: 25vh;
@@ -66,6 +76,10 @@ export const StyledLogoWhatsapp = styled.div`
     bottom: 10;
     right: 0;
     margin-right: 20px;
+
+    @media screen and (min-width: 1800px) {
+        bottom: 70px;
+    }
 
     @media screen and (max-width: 700px) {
         bottom: 40px;

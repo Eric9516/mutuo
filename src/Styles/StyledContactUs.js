@@ -12,6 +12,7 @@ export const StyledDiv = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 30px;
 
     @media screen and (max-width: 1100px) {
         background-color: rgb(230, 228, 228);

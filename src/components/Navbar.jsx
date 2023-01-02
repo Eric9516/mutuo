@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
+import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -20,19 +21,19 @@ function Navbar() {
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                        <Nav.Link href="#home" className="nav-links" onClick={closeMobileMenu}>
                             Home
-                        </Link>
+                        </Nav.Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
+                        <Nav.Link href="#aboutUs" className="nav-links" onClick={closeMobileMenu}>
                             Quienes somos?
-                        </Link>
+                        </Nav.Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/contact-us" className="nav-links" onClick={closeMobileMenu}>
+                        <Nav.Link href="#contactUs" className="nav-links" onClick={closeMobileMenu}>
                             Contactanos
-                        </Link>
+                        </Nav.Link>
                     </li>
                     <li>
                         <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
