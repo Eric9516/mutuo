@@ -1,6 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
-import { StyledForm, Myh2, StyledButton, StyledFormControl, StyledDiv } from "../Styles/StyledContactUs.js";
+import { StyledDiv, StyledForm, StyledFormControl, StyledButton, Myh2 } from "../Styles/StyledContactUs.js";
 
 const ContactUs = () => {
     return (
@@ -49,7 +49,7 @@ const ContactUs = () => {
                     <Form.Label>Cantidad de cuotas</Form.Label>
                     <StyledFormControl type="number" placeholder="Hasta en 12 cuotas " />
                 </Form.Group>
-                <StyledButton variant="primary" type="submit">
+                <StyledButton variant="primary" type="submit" className="btn">
                     Enviar
                 </StyledButton>
             </StyledForm>

@@ -6,7 +6,7 @@ import { AiFillBank } from "react-icons/ai";
 import { RxCountdownTimer } from "react-icons/rx";
 import { MdWork } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
-import { StyledDivContainer, StyledDivChild, StyledTittle, StyledAllHome, StyledLogoWhatsapp } from "../Styles/StyledHome";
+import { StyledAllHome, StyledDivContainer, StyledDivChild, StyledTittle, StyledLogoWhatsapp } from "../Styles/StyledHome";
 
 const Home = () => {
     return (
@@ -47,7 +47,7 @@ const Home = () => {
                 </StyledDivChild>
             </StyledDivContainer>
             <StyledLogoWhatsapp>
-                <a href="https://wa.link/ubocaj .">
+                <a href="https://wa.link/ubocaj" target="_blank">
                     <RiWhatsappFill color="green" size="lg" />
                 </a>
             </StyledLogoWhatsapp>
