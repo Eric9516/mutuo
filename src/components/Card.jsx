@@ -1,14 +1,14 @@
 import React from "react";
 import "../Styles/card.css";
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div class="card">
             <div class="front">
-                <h1>A</h1>
+                <h1>{props.titleFront}</h1>
             </div>
             <div class="back">
-                <h1>B</h1>
+                <h1>{props.titleBack}</h1>
             </div>
         </div>
     );

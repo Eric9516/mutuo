@@ -9,7 +9,7 @@ const PorqueElegirnos = () => {
             <StyledAllHome>
                 <StyledTitle>Por que elegirnos?</StyledTitle>
                 <StyledDivContainer>
-                    <Card />
+                    <Card titleFront="Hola" titleBack="Chau" />
                     <Card />
                     <Card />
                     <Card />
