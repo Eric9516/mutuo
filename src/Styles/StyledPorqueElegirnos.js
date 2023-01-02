@@ -7,6 +7,7 @@ export const StyledAllHome = styled.div`
     background-color: rgb(230, 228, 228);
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -30,36 +31,7 @@ export const StyledDivContainer = styled.div`
     }
 `;
 
-export const StyledDivChild = styled.div`
-    width: 20vw;
-    height: 40vh;
-    /* background-image: url(${fondo}); */
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 15px;
-    transition: all 0.6s;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-
-    @media screen and (min-width: 1800px) {
-        width: 15vw;
-        height: 30vh;
-        gap: 20px;
-    }
-
-    @media screen and (max-width: 700px) {
-        width: 65vw;
-        height: 25vh;
-    }
-`;
-
-export const StyledTittle = styled.h3`
+export const StyledTitle = styled.h3`
     text-align: center;
     padding-top: 20px;
 `;
