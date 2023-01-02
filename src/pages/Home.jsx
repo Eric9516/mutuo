@@ -11,7 +11,7 @@ import { StyledAllHome, StyledDivContainer, StyledDivChild, StyledTittle, Styled
 const Home = () => {
     return (
         <StyledAllHome>
-            <StyledTittle className="home">Por qué elegirnos?</StyledTittle>
+            <StyledTittle>Por qué elegirnos?</StyledTittle>
             <StyledDivContainer>
                 <StyledDivChild>
                     <BsFillStopwatchFill size="4em" />

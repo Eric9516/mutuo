@@ -35,6 +35,15 @@ export const StyledDivChild = styled.div`
     flex-direction: column;
     background-color: #fff;
     border-radius: 15px;
+    transition: all 0.2s;
+
+    & p {
+        transform: translateZ(40px);
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     @media screen and (max-width: 700px) {
         width: 65vw;
