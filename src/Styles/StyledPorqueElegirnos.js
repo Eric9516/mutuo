@@ -21,7 +21,7 @@ export const StyledDivContainer = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     padding: 30px;
