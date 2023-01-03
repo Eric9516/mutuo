@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/card.css";
+import { whyChooseUs, easily } from "./itemsCard.js";
 
 const Card = (props) => {
     return (
