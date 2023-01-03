@@ -67,7 +67,7 @@ export const StyledChildDiv = styled.div`
 
     @keyframes borde {
         100% {
-            width: 110%;
+            width: 100%;
             height: 110%;
         }
     }
