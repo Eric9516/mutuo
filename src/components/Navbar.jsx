@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "./Button";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
@@ -35,13 +34,7 @@ function Navbar() {
                             Contactanos
                         </Nav.Link>
                     </li>
-                    <li>
-                        <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
-                            Sign Up
-                        </Link>
-                    </li>
                 </ul>
-                <Button />
             </nav>
         </>
     );

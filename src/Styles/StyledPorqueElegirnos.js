@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import fondo from "../img/fondo2.jpg";
 
 export const StyledAllHome = styled.div`
     width: 100vw;
@@ -8,6 +7,7 @@ export const StyledAllHome = styled.div`
     height: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;

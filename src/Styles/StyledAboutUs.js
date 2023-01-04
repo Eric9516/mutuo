@@ -9,16 +9,20 @@ export const StyledDiv = styled.div`
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: bottom left;
-    padding: 20px;
 
     @media screen and (min-width: 1800px) {
-        bbackground-color: #fff;
+        background-color: #fff;
         background-image: url(${image});
         background-repeat: no-repeat;
         background-position: bottom left;
         background-size: 600px;
     }
     @media screen and (max-width: 960px) {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
         background-color: #fff;
         background-image: url(${image});
         background-repeat: no-repeat;
@@ -26,8 +30,11 @@ export const StyledDiv = styled.div`
         background-size: 300px;
     }
     @media screen and (max-width: 450px) {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 30px;
-        height: 100vh;
     }
 `;
 export const StyledChildDiv = styled.div`
@@ -48,8 +55,10 @@ export const StyledChildDiv = styled.div`
         position: absolute;
         border: 0px solid #fff;
         transition: all 1s;
-        animation-name: borde;
-        animation-duration: 1.5s;
+        animation-name: "borde";
+        animation-duration: 3s;
+        animation-iteration-count: 3;
+        animation-direction: alternate;
         animation-fill-mode: forwards;
     }
     &::after {
@@ -67,19 +76,26 @@ export const StyledChildDiv = styled.div`
 
     @keyframes borde {
         100% {
-            width: 100%;
+            width: 110%;
             height: 110%;
         }
     }
 
     @media screen and (max-width: 960px) {
-        width: auto;
+        width: 70vw;
         left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         top: 50px;
     }
     @media screen and (max-width: 650px) {
-        width: auto;
+        width: 70vw;
         left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         top: 30px;
     }
 `;
