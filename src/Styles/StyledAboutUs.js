@@ -18,7 +18,7 @@ export const StyledDiv = styled.div`
         background-size: 600px;
     }
     @media screen and (max-width: 960px) {
-        height: 70vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -41,7 +41,7 @@ export const StyledChildDiv = styled.div`
     width: 80vh;
     position: relative;
     left: 45%;
-    top: 100px;
+    top: 80px;
     padding: 10px 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -57,8 +57,6 @@ export const StyledChildDiv = styled.div`
         transition: all 1s;
         animation-name: "borde";
         animation-duration: 3s;
-        animation-iteration-count: 3;
-        animation-direction: alternate;
         animation-fill-mode: forwards;
     }
     &::after {
@@ -99,7 +97,7 @@ export const StyledChildDiv = styled.div`
         top: 30px;
     }
 `;
-export const Styledh3 = styled.h3`
+export const Styledh3 = styled.p`
     color: darkblue;
     font-size: 2.5em;
     padding: 20px;

@@ -6,8 +6,8 @@ import PorqueElegirnos from "../components/PorqueElegirnos";
 const Home = () => {
     return (
         <>
-            <PorqueElegirnos />
             <AboutUs />
+            <PorqueElegirnos />
             <ContactUs />
         </>
     );

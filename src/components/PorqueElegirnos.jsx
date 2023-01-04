@@ -10,14 +10,14 @@ const PorqueElegirnos = () => {
             <StyledAllHome>
                 <StyledTitle>Por que elegirnos?</StyledTitle>
                 <StyledDivContainer>
-                    {whyChooseUs.map((item) => {
-                        return <Card key={item.id} icono={item.icono} txtFront={item.textoFront} txtBack={item.textoBack} />;
+                    {whyChooseUs.map((item, index) => {
+                        return <Card key={index} icono={item.icono} txtFront={item.textoFront} txtBack={item.textoBack} />;
                     })}
                 </StyledDivContainer>
                 <StyledTitle>Obtene tu crédito con facilidad</StyledTitle>
                 <StyledDivContainer>
-                    {easily.map((item) => {
-                        return <Card key={item.id} icono={item.icono} txtFront={item.textoFront} txtBack={item.textoBack} />;
+                    {easily.map((item, index) => {
+                        return <Card key={index} icono={item.icono} txtFront={item.textoFront} txtBack={item.textoBack} />;
                     })}
                 </StyledDivContainer>
                 <StyledLogoWhatsapp>

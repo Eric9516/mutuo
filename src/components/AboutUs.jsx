@@ -6,7 +6,7 @@ const AboutUs = () => {
         <StyledDiv id="aboutUs">
             <StyledChildDiv>
                 <Styledh3>
-                    Somos una empresa exclusiva de préstamos personales en efectivo y en el acto.
+                    ¡Hola! 😊 somos <strong>Mutuo</strong>, una empresa exclusiva de préstamos personales en efectivo y en el acto.
                     <br /> Cuotas fijas y en pesos.
                 </Styledh3>
             </StyledChildDiv>
