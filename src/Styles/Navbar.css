@@ -14,15 +14,10 @@
     top: -12px;
 }
 
-.boton {
-    position: relative;
-    top: -10px;
-}
-
-.fa-firstdraft {
+/* .fa-firstdraft {
     margin-left: 0.5rem;
     font-size: 1.6rem;
-}
+} */
 
 .nav-menu {
     display: grid;
@@ -51,8 +46,9 @@
 
 .nav-links:hover {
     color: #fff;
+    transition: all 0.2s ease-out;
 }
-
+/* 
 .nav-links::after {
     content: "";
     position: absolute;
@@ -65,7 +61,7 @@
     transform: scale(0);
     transform-origin: bottom right;
     transition: transform 0.4s ease-in-out;
-}
+} */
 
 .nav-links:hover::after {
     transform: scaleX(1);

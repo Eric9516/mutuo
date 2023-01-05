@@ -21,7 +21,7 @@ const PorqueElegirnos = () => {
                     })}
                 </StyledDivContainer>
                 <StyledLogoWhatsapp>
-                    <a href="https://wa.link/ubocaj .">
+                    <a href="https://wa.link/ubocaj" target="_blank">
                         <RiWhatsappFill color="green" size="lg" />
                     </a>
                 </StyledLogoWhatsapp>
