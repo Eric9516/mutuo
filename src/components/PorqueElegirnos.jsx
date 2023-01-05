@@ -14,14 +14,14 @@ const PorqueElegirnos = () => {
                         return <Card key={index} icono={item.icono} txtFront={item.textoFront} txtBack={item.textoBack} />;
                     })}
                 </StyledDivContainer>
-                <StyledTitle>Obtene tu crédito con facilidad</StyledTitle>
+                <StyledTitle id="requisitos">Obtene tu crédito con facilidad</StyledTitle>
                 <StyledDivContainer>
                     {easily.map((item, index) => {
                         return <Card key={index} icono={item.icono} txtFront={item.textoFront} txtBack={item.textoBack} />;
                     })}
                 </StyledDivContainer>
                 <StyledLogoWhatsapp>
-                    <a href="https://wa.link/ubocaj" target="_blank">
+                    <a href="https://wa.link/ubocaj" target="_blank" rel="noreferrer">
                         <RiWhatsappFill color="green" size="lg" />
                     </a>
                 </StyledLogoWhatsapp>

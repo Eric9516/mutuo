@@ -3,7 +3,7 @@ import { Form, Button, FormControl } from "react-bootstrap";
 import image from "../img/leon2.png";
 
 export const StyledDiv = styled.div`
-    background-color: #fff;
+    background-color: rgb(230, 228, 228);
     background-image: url(${image});
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -15,7 +15,7 @@ export const StyledDiv = styled.div`
     padding-top: 30px;
 
     @media screen and (max-width: 1100px) {
-        background-color: #fff;
+        background-color: rgb(230, 228, 228);
         background-image: url(${image});
         background-repeat: no-repeat;
         background-position: bottom right;
@@ -23,7 +23,7 @@ export const StyledDiv = styled.div`
     }
 
     @media screen and (max-width: 800px) {
-        background-color: #fff;
+        background-color: rgb(230, 228, 228);
         background-image: url(${image});
         background-repeat: no-repeat;
         background-position: bottom right;
@@ -68,5 +68,5 @@ export const StyledButton = styled(Button)`
 `;
 
 export const StyledFormControl = styled(FormControl)`
-    background-color: #fff;
+    background-color: rgb(255, 255, 228);
 `;

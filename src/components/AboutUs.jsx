@@ -3,7 +3,7 @@ import { StyledDiv, StyledChildDiv, Styledh3 } from "../Styles/StyledAboutUs.js"
 
 const AboutUs = () => {
     return (
-        <StyledDiv id="aboutUs">
+        <StyledDiv>
             <StyledChildDiv>
                 <Styledh3>
                     ¡Hola! 😊 somos <strong>Mutuo</strong>, una empresa exclusiva de préstamos personales en efectivo y en el acto.

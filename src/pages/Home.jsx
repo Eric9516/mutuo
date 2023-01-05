@@ -1,6 +1,7 @@
 import React from "react";
 import AboutUs from "../components/AboutUs";
 import ContactUs from "../components/ContactUs";
+import Cotizador from "../components/Cotizador";
 import PorqueElegirnos from "../components/PorqueElegirnos";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <>
             <AboutUs />
             <PorqueElegirnos />
+            <Cotizador />
             <ContactUs />
         </>
     );
