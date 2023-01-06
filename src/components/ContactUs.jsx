@@ -43,7 +43,7 @@ const ContactUs = () => {
                 <hr></hr>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Monto solicitado</Form.Label>
-                    <StyledFormControl type="number" placeholder="Mínimo $5.000 máximo $120.000" />
+                    <StyledFormControl type="number" placeholder="Mínimo $5.000 máximo $100.000" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Cantidad de cuotas</Form.Label>

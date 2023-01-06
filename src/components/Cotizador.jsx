@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { StyledCotAll, StyledButton, DivCentral, DivIndividual, DivBotones, Divh4 } from "../Styles/StyledCotizador.js";
+import { StyledCotAll, Titulo, DivCentral, DivIndividual, DivBotones, Divh4 } from "../Styles/StyledCotizador.js";
+import { Button } from "react-bootstrap";
 import { values } from "./Values.js";
 
 const Cotizador = () => {
@@ -30,15 +31,19 @@ const Cotizador = () => {
 
     return (
         <StyledCotAll id="cotizador">
-            <h1>Cotizador</h1>
+            <Titulo>Cotizador</Titulo>
             <DivCentral>
                 <DivIndividual>
                     <Divh4>
                         <h4>Monto: {cantidad}</h4>
                     </Divh4>
                     <DivBotones>
-                        <StyledButton onClick={masCantidad}>+</StyledButton>
-                        <StyledButton onClick={menosCantidad}>-</StyledButton>
+                        <Button variant="primary" onClick={masCantidad}>
+                            +
+                        </Button>
+                        <Button variant="secondary" onClick={menosCantidad}>
+                            -
+                        </Button>
                     </DivBotones>
                 </DivIndividual>
                 <DivIndividual>
@@ -46,11 +51,18 @@ const Cotizador = () => {
                         <h4>Cuotas: {cuotas}</h4>
                     </Divh4>
                     <DivBotones>
-                        <StyledButton onClick={sumar}>+</StyledButton>
-                        <StyledButton onClick={restar}>-</StyledButton>
+                        <Button variant="primary" onClick={sumar}>
+                            +
+                        </Button>
+                        <Button variant="secondary" onClick={restar}>
+                            -
+                        </Button>
                     </DivBotones>
                 </DivIndividual>
-                <h3>Valor de la cuota: {valores[cuotas]}</h3>
+                <h3>Valor de la cuota: ${valores[cuotas]}</h3>
+                <Button variant="primary" href="#contactUs">
+                    Lo quiero!!
+                </Button>{" "}
             </DivCentral>
         </StyledCotAll>
     );
