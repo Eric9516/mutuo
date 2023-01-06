@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyledCotAll, StyledButton } from "../Styles/StyledCotizador.js";
+import { StyledCotAll, StyledButton, DivCentral, DivIndividual, DivBotones, Divh4 } from "../Styles/StyledCotizador.js";
 import { values } from "./Values.js";
 
 const Cotizador = () => {
@@ -31,13 +31,27 @@ const Cotizador = () => {
     return (
         <StyledCotAll id="cotizador">
             <h1>Cotizador</h1>
-            <StyledButton onClick={restar}>-</StyledButton>
-            <StyledButton onClick={sumar}>+</StyledButton>
-            <h4>{cuotas}</h4>
-            <StyledButton onClick={menosCantidad}>-</StyledButton>
-            <StyledButton onClick={masCantidad}>+</StyledButton>
-            <h4>{cantidad}</h4>
-            <h3>Valor de la cuota: {valores[cuotas]}</h3>
+            <DivCentral>
+                <DivIndividual>
+                    <Divh4>
+                        <h4>Monto: {cantidad}</h4>
+                    </Divh4>
+                    <DivBotones>
+                        <StyledButton onClick={masCantidad}>+</StyledButton>
+                        <StyledButton onClick={menosCantidad}>-</StyledButton>
+                    </DivBotones>
+                </DivIndividual>
+                <DivIndividual>
+                    <Divh4>
+                        <h4>Cuotas: {cuotas}</h4>
+                    </Divh4>
+                    <DivBotones>
+                        <StyledButton onClick={sumar}>+</StyledButton>
+                        <StyledButton onClick={restar}>-</StyledButton>
+                    </DivBotones>
+                </DivIndividual>
+                <h3>Valor de la cuota: {valores[cuotas]}</h3>
+            </DivCentral>
         </StyledCotAll>
     );
 };
