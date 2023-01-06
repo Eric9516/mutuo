@@ -67,6 +67,6 @@ export const StyledButton = styled(Button)`
     margin-bottom: 20px;
 `;
 
-export const StyledFormControl = styled(FormControl)`
+export const StyledInput = styled(FormControl)`
     background-color: rgb(255, 255, 228);
 `;

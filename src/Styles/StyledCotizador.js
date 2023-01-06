@@ -46,7 +46,7 @@ export const DivIndividual = styled.div`
     }
 `;
 
-export const DivBotones = styled.div`
+export const DivBoton = styled.div`
     border: none;
     background-color: inherit;
     display: flex;

@@ -17,7 +17,7 @@ export const StyledAllHome = styled.div`
     }
 `;
 
-export const StyledDivContainer = styled.div`
+export const DivContainer = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
@@ -36,7 +36,7 @@ export const StyledTitle = styled.h3`
     padding-top: 20px;
 `;
 
-export const StyledLogoWhatsapp = styled.div`
+export const LogoWhatsapp = styled.div`
     width: 75px;
     height: 75px;
     display: flex;

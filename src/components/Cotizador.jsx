@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyledCotAll, Titulo, DivCentral, DivIndividual, DivBotones, Divh4 } from "../Styles/StyledCotizador.js";
+import { StyledCotAll, Titulo, DivCentral, DivIndividual, DivBoton, Divh4 } from "../Styles/StyledCotizador.js";
 import { Button } from "react-bootstrap";
 import { values } from "./Values.js";
 
@@ -37,27 +37,27 @@ const Cotizador = () => {
                     <Divh4>
                         <h4>Monto: {cantidad}</h4>
                     </Divh4>
-                    <DivBotones>
+                    <DivBoton>
                         <Button variant="primary" onClick={masCantidad}>
                             +
                         </Button>
                         <Button variant="secondary" onClick={menosCantidad}>
                             -
                         </Button>
-                    </DivBotones>
+                    </DivBoton>
                 </DivIndividual>
                 <DivIndividual>
                     <Divh4>
                         <h4>Cuotas: {cuotas}</h4>
                     </Divh4>
-                    <DivBotones>
+                    <DivBoton>
                         <Button variant="primary" onClick={sumar}>
                             +
                         </Button>
                         <Button variant="secondary" onClick={restar}>
                             -
                         </Button>
-                    </DivBotones>
+                    </DivBoton>
                 </DivIndividual>
                 <h3>Valor de la cuota: ${valores[cuotas]}</h3>
                 <Button variant="primary" href="#contactUs">
