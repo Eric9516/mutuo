@@ -107,7 +107,9 @@ export const StyledChildDiv = styled.div`
         top: 30px;
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 450px) and (max-height: 800px) {
+        width: 90%;
+        height: 40vh;
         padding: 0;
     }
     @media screen and (max-width: 300px) {

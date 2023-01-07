@@ -53,7 +53,7 @@ const ContactUs = () => {
                     <Form.Label>Cantidad de cuotas</Form.Label>
                     <StyledInput type="number" placeholder="Hasta en 12 cuotas " />
                 </Form.Group>
-                <StyledButton variant="primary" type="submit" className="btn" data-aos="fade-right">
+                <StyledButton variant="primary" type="submit" className="btn">
                     Enviar
                 </StyledButton>
             </StyledForm>

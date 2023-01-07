@@ -55,6 +55,9 @@ export const LogoWhatsapp = styled.div`
     }
 
     @media screen and (max-width: 700px) {
-        bottom: 40px;
+        width: 50px;
+        height: 50px;
+        bottom: 90px;
+        right: 40px;
     }
 `;
