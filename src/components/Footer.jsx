@@ -7,19 +7,19 @@ import { A, Div1, Div2, DivContenedor, DivFooter, Redes, Ul } from "../Styles/St
 const Footer = () => {
     return (
         <>
-            <DivFooter>
+            <DivFooter id="footer">
                 <DivContenedor>
                     <Div1>
                         <Ul>
                             <h5>Encontranos en nuestras redes sociales</h5>
                             <Redes>
                                 <li>
-                                    <a href="http://facebook.com" target="_blank" rel="noreferrer">
+                                    <a href="https://www.facebook.com/profile.php?id=100075226601331" target="_blank" rel="noreferrer">
                                         <BsFacebook size="2em" color="blue" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://instagram.com" target="_blank" rel="noreferrer">
+                                    <a href="https://www.instagram.com/creditosmutuo/?hl=es" target="_blank" rel="noreferrer">
                                         <BsInstagram size="2em" />
                                     </a>
                                 </li>
@@ -31,7 +31,7 @@ const Footer = () => {
                                 <BsFillTelephoneFill size="1.5em" /> 3472-469992
                             </li>
                             <li>
-                                <MdEmail size="1.5em" /> mutuocreditos@hotmail.com
+                                <MdEmail size="1.5em" /> creditosmutuo@gmail.com
                             </li>
                         </Ul>
                     </Div1>

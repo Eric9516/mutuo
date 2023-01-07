@@ -11,9 +11,9 @@ function Navbar() {
     return (
         <>
             <nav className="navbar" id="nav">
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                <Nav.Link href="#footer" className="navbar-logo" onClick={closeMobileMenu}>
                     <img className="imagen" src={require("../img/logo.png")} alt="" />
-                </Link>
+                </Nav.Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"} />
                 </div>

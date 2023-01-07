@@ -15,6 +15,7 @@ export const Titulo = styled.h1`
 
 export const DivCentral = styled.div`
     width: 60vw;
+    height: 70vh;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;

@@ -64,9 +64,15 @@ export const Myh2 = styled.h2`
 `;
 
 export const StyledButton = styled(Button)`
+    margin-top: 20px;
     margin-bottom: 20px;
 `;
 
 export const StyledInput = styled(FormControl)`
     background-color: rgb(255, 255, 228);
+`;
+
+export const P = styled.p`
+    color: red;
+    font-weight: bold;
 `;
