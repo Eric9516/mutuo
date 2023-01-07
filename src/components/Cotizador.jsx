@@ -39,7 +39,7 @@ const Cotizador = () => {
             <DivCentral data-aos="fade-up">
                 <DivIndividual>
                     <Divh4>
-                        <h4>Monto: {cantidad}</h4>
+                        <h4>Monto: ${cantidad}</h4>
                     </Divh4>
                     <DivBoton>
                         <Button variant="primary" onClick={masCantidad}>
