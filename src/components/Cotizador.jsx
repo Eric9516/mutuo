@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { StyledCotAll, Titulo, DivCentral, DivIndividual, DivBoton, Divh4 } from "../Styles/StyledCotizador.js";
 import { Button } from "react-bootstrap";
 import { values } from "./Values.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const Cotizador = () => {
     const [cuotas, setCuotas] = useState(3);
@@ -31,8 +35,8 @@ const Cotizador = () => {
 
     return (
         <StyledCotAll id="cotizador">
-            <Titulo>Cotizador</Titulo>
-            <DivCentral>
+            <Titulo data-aos="fade-left">Cotizador</Titulo>
+            <DivCentral data-aos="fade-up">
                 <DivIndividual>
                     <Divh4>
                         <h4>Monto: {cantidad}</h4>

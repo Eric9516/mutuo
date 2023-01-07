@@ -1,9 +1,13 @@
 import React from "react";
 import "../Styles/Card.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const Card = (props) => {
     return (
-        <div className="card">
+        <div className="card" data-aos="fade-up" data-aos-duration="900">
             <div className="front">
                 {props.icono}
                 <p>{props.txtFront}</p>
