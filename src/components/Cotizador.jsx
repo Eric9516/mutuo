@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { StyledCotAll, Titulo, DivCentral, DivIndividual, DivBoton, Divh4 } from "../Styles/StyledCotizador.js";
 import { Button } from "react-bootstrap";
-import { values } from "./Values.js";
+import { values } from "./../utils/Values.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

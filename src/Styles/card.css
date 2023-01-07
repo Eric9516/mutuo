@@ -45,7 +45,7 @@
     font-size: 1.2em;
     font-weight: bold;
     letter-spacing: 0.1ch;
-    background-image: url("../img/fondo2.jpg");
+    background-image: url("../img/fondo.jpg");
     transform: perspective(500px) rotateY(180deg);
 }
 

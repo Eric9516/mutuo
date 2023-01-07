@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "../components/Card";
+import Card from "../utils/Card";
 import { RiWhatsappFill } from "react-icons/ri";
 import { StyledAllHome, LogoWhatsapp, DivContainer, StyledTitle } from "../Styles/StyledPorqueElegirnos";
-import { whyChooseUs, easily } from "./itemsCard";
+import { whyChooseUs, easily } from "../utils/itemsCard.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
