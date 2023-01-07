@@ -65,7 +65,7 @@ const Cotizador = () => {
                 </DivIndividual>
                 <h3>Valor de la cuota: ${valores[cuotas]}</h3>
                 <Button variant="primary" href="#contactUs">
-                    Lo quiero!!
+                    LO QUIERO!!
                 </Button>{" "}
             </DivCentral>
         </StyledCotAll>

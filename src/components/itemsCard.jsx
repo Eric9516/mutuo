@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFillStopwatchFill } from "react-icons/bs";
+import { BsFillStopwatchFill, BsFillFilePersonFill } from "react-icons/bs";
 import { FaDollarSign, FaPercent } from "react-icons/fa";
 import { GoChecklist } from "react-icons/go";
 import { AiFillBank } from "react-icons/ai";
@@ -44,5 +44,10 @@ export const easily = [
         icono: <RxCountdownTimer size="4em" />,
         textoFront: "Tener buen comportamiento creditico los últimos 12 meses",
         textoBack: "No presentar embargos ni deudas con otras agencias financieras en los últimos 12 meses.",
+    },
+    {
+        icono: <BsFillFilePersonFill size="4em" />,
+        textoFront: "Garantía",
+        textoBack: "Con recibo de sueldo y antigüedad de más de un año.",
     },
 ];

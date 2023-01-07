@@ -34,6 +34,7 @@ export const DivContainer = styled.div`
 export const StyledTitle = styled.h3`
     text-align: center;
     padding-top: 20px;
+    color: rgb(55, 55, 141);
 `;
 
 export const LogoWhatsapp = styled.div`

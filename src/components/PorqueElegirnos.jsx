@@ -19,7 +19,7 @@ const PorqueElegirnos = () => {
                     })}
                 </DivContainer>
                 <StyledTitle id="requisitos" data-aos="fade-right">
-                    Obtene tu crédito con facilidad
+                    Obtene tu crédito con <strong>FACILIDAD</strong>
                 </StyledTitle>
                 <DivContainer>
                     {easily.map((item, index) => {

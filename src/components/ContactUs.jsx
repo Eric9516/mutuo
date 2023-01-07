@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
-import { cantidadCuotas, montoPrestamo } from "../Validator/validator.js";
+import { cantidadCuotas, montoPrestamo } from "../validations/validator.js";
 
 AOS.init();
 

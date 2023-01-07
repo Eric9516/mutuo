@@ -1,7 +1,6 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsFillTelephoneFill } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsFillTelephoneFill, BsFillArrowUpCircleFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { FaArrowUp } from "react-icons/fa";
 import { A, Div1, Div2, DivContenedor, DivFooter, Redes, Ul } from "../Styles/StyledFooter.js";
 
 const Footer = () => {
@@ -39,7 +38,7 @@ const Footer = () => {
                         <Ul>
                             <li>
                                 <A href="#nav">
-                                    <FaArrowUp size="2em" /> Volver al inicio
+                                    <BsFillArrowUpCircleFill size="2em" /> Volver al inicio
                                 </A>
                             </li>
                         </Ul>
