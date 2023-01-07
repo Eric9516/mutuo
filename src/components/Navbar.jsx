@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
-import "../Styles/Navbar.css";
+import "../styles/Navbar.css";
 
 function Navbar() {
     const [click, setClick] = useState(false);

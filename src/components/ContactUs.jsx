@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Form } from "react-bootstrap";
-import { StyledDiv, StyledForm, StyledInput, StyledButton, Myh2, P } from "../Styles/StyledContactUs.js";
+import { StyledDiv, StyledForm, StyledInput, StyledButton, Myh2, P } from "../styles/StyledContactUs.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";

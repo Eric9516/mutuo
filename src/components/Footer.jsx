@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFacebook, BsInstagram, BsFillTelephoneFill, BsFillArrowUpCircleFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { A, Div1, Div2, DivContenedor, DivFooter, Redes, Ul } from "../Styles/StyledFooter.js";
+import { A, Div1, Div2, DivContenedor, DivFooter, Redes, Ul } from "../styles/StyledFooter.js";
 
 const Footer = () => {
     return (
