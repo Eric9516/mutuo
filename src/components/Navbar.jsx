@@ -10,7 +10,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className="navbar">
+            <nav className="navbar" id="nav">
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                     <img className="imagen" src={require("../img/logo.png")} alt="" />
                 </Link>

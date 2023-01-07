@@ -3,6 +3,7 @@ import AboutUs from "../components/AboutUs";
 import ContactUs from "../components/ContactUs";
 import Cotizador from "../components/Cotizador";
 import PorqueElegirnos from "../components/PorqueElegirnos";
+import Footer from "../components/Footer";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <PorqueElegirnos />
             <Cotizador />
             <ContactUs />
+            <Footer />
         </>
     );
 };
