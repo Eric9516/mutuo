@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
-import { cantidadCuotas, montoPrestamo } from "../validations/validator.js";
+import { cantidadCuotas, localidad, montoPrestamo } from "../validations/validator.js";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
@@ -96,10 +96,12 @@ const ContactUs = () => {
                         type="text"
                         {...register("localidad", {
                             required: true,
+                            validate: localidad,
                         })}
                         name="localidad"
                     />
                     {errors.localidad?.type === "required" && <P>El campo es obligatorio</P>}
+                    {errors.localidad?.type === "validate" && <P>Servicio disponible para personas de Leones, Córdoba</P>}
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail" data-aos="fade-right">
                     <Form.Label>Dirección</Form.Label>

@@ -5,3 +5,7 @@ export const montoPrestamo = (value) => {
 export const cantidadCuotas = (value) => {
     return value >= 0 && value <= 12;
 };
+
+export const localidad = (value) => {
+    return value.trim() === "Leones" || value.trim() === "leones";
+};

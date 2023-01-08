@@ -6,6 +6,6 @@
 
 # Agregar funcionalidad al formulario (enviar mensajes) - listo
 
-# Al precionar enviar que diga un mensaje. Ej: gracias por escribirnos, nos contactaremos con usted a la brevedad.
+# Al precionar enviar que diga un mensaje. Ej: gracias por escribirnos, nos contactaremos con usted a la brevedad. - listo
 
 # Terminar de acomodar temas de diseño responsive
