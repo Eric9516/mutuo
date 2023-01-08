@@ -1,16 +1,12 @@
 import React, { useRef, useState } from "react";
 import { Form } from "react-bootstrap";
-import { StyledDiv, StyledForm, StyledInput, StyledButton, Myh2, P } from "../styles/StyledContactUs.js";
+import { StyledDiv, StyledForm, StyledInput, StyledButton, Myh2, P } from "../Styles/StyledContactUs.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { cantidadCuotas, montoPrestamo } from "../validations/validator.js";
 import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
-
-const MySwal = withReactContent(Swal);
 
 AOS.init();
 
@@ -108,12 +104,12 @@ const ContactUs = () => {
                     <Form.Label>Número de celular</Form.Label>
                     <StyledInput
                         type="number"
-                        {...register("celular", {
+                        {...register("telefono", {
                             required: true,
                         })}
                         name="telefono"
                     />
-                    {errors.celular?.type === "required" && <P>El campo es obligatorio</P>}
+                    {errors.telefono?.type === "required" && <P>El campo es obligatorio</P>}
                 </Form.Group>
                 <hr />
                 <Form.Group className="mb-3" controlId="formBasicEmail" data-aos="fade-right">
@@ -132,12 +128,12 @@ const ContactUs = () => {
                     <Form.Label>Antigüedad</Form.Label>
                     <StyledInput
                         type="text"
-                        {...register("antigüedad", {
+                        {...register("antiguedad", {
                             required: true,
                         })}
                         name="antiguedad"
                     />
-                    {errors.antigüedad?.type === "required" && <P>El campo es obligatorio</P>}
+                    {errors.antiguedad?.type === "required" && <P>El campo es obligatorio</P>}
                 </Form.Group>
                 <hr />
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
@@ -145,28 +141,28 @@ const ContactUs = () => {
                     <StyledInput
                         type="number"
                         placeholder="Mínimo $5.000 máximo $100.000"
-                        {...register("monto_prestamo", {
+                        {...register("monto", {
                             required: true,
                             validate: montoPrestamo,
                         })}
                         name="monto"
                     />
-                    {errors.monto_prestamo?.type === "required" && <P>El campo es obligatorio</P>}
-                    {errors.monto_prestamo?.type === "validate" && <P>Monto entre $5.000 y $100.000</P>}
+                    {errors.monto?.type === "required" && <P>El campo es obligatorio</P>}
+                    {errors.monto?.type === "validate" && <P>Monto entre $5.000 y $100.000</P>}
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <Form.Label>Cantidad de cuotas</Form.Label>
                     <StyledInput
                         type="number"
                         placeholder="Hasta en 12 cuotas"
-                        {...register("n_cuotas", {
+                        {...register("cuotas", {
                             required: true,
                             validate: cantidadCuotas,
                         })}
                         name="cuotas"
                     />
-                    {errors.n_cuotas?.type === "required" && <P>El campo es obligatorio</P>}
-                    {errors.n_cuotas?.type === "validate" && <P>Máximo 12 cuotas</P>}
+                    {errors.cuotas?.type === "required" && <P>El campo es obligatorio</P>}
+                    {errors.cuotas?.type === "validate" && <P>Máximo 12 cuotas</P>}
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <hr />

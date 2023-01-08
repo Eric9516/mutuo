@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledDiv, StyledChildDiv, Styledh3 } from "../styles/StyledAboutUs.js";
+import { StyledDiv, StyledChildDiv, Styledh3 } from "../Styles/StyledAboutUs.js";
 
 const AboutUs = () => {
     return (
