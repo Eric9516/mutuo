@@ -6,19 +6,23 @@ import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { cantidadCuotas, montoPrestamo } from "../validations/validator.js";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 
 AOS.init();
 
 const ContactUs = () => {
+    const [captchaValido, setCaptchaValido] = useState(null);
+    const captcha = useRef(null);
+
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
-
-    const [captchaValido, setCaptchaValido] = useState(null);
-
-    const captcha = useRef(null);
 
     const onChange = () => {
         if (captcha.current.getValue()) {
@@ -27,7 +31,10 @@ const ContactUs = () => {
 
     const submit = (data, e) => {
         if (captcha.current.getValue()) {
-            console.log(data.nombre, data.apellido);
+            emailjs
+                .sendForm("service_arcn9qh", "template_6wsatef", e.target, "VX9SWecCA8TT-C6kr")
+                .then((response) => console.log(response))
+                .catch((error) => console.log(error));
         } else {
             setCaptchaValido(false);
             e.preventDefault();
@@ -46,6 +53,7 @@ const ContactUs = () => {
                             required: true,
                             minLength: 3,
                         })}
+                        name="nombre"
                     />
                     {errors.nombre?.type === "required" && <P>El campo es obligatorio</P>}
                     {errors.nombre?.type === "minLength" && <P>Debe tener 3 letras como mínimo</P>}
@@ -58,6 +66,7 @@ const ContactUs = () => {
                             required: true,
                             minLength: 3,
                         })}
+                        name="apellido"
                     />
                     {errors.apellido?.type === "required" && <P>El campo es obligatorio</P>}
                     {errors.apellido?.type === "minLength" && <P>Debe tener 3 letras como mínimo</P>}
@@ -69,6 +78,7 @@ const ContactUs = () => {
                         {...register("dni", {
                             required: true,
                         })}
+                        name="dni"
                     />
                     {errors.dni?.type === "required" && <P>El campo es obligatorio</P>}
                 </Form.Group>
@@ -79,6 +89,7 @@ const ContactUs = () => {
                         {...register("localidad", {
                             required: true,
                         })}
+                        name="localidad"
                     />
                     {errors.localidad?.type === "required" && <P>El campo es obligatorio</P>}
                 </Form.Group>
@@ -89,6 +100,7 @@ const ContactUs = () => {
                         {...register("direccion", {
                             required: true,
                         })}
+                        name="direccion"
                     />
                     {errors.direccion?.type === "required" && <P>El campo es obligatorio</P>}
                 </Form.Group>
@@ -99,6 +111,7 @@ const ContactUs = () => {
                         {...register("celular", {
                             required: true,
                         })}
+                        name="telefono"
                     />
                     {errors.celular?.type === "required" && <P>El campo es obligatorio</P>}
                 </Form.Group>
@@ -111,6 +124,7 @@ const ContactUs = () => {
                         {...register("condicion_laboral", {
                             required: true,
                         })}
+                        name="condicion_laboral"
                     />
                     {errors.condicion_laboral?.type === "required" && <P>El campo es obligatorio</P>}
                 </Form.Group>
@@ -121,6 +135,7 @@ const ContactUs = () => {
                         {...register("antigüedad", {
                             required: true,
                         })}
+                        name="antiguedad"
                     />
                     {errors.antigüedad?.type === "required" && <P>El campo es obligatorio</P>}
                 </Form.Group>
@@ -134,6 +149,7 @@ const ContactUs = () => {
                             required: true,
                             validate: montoPrestamo,
                         })}
+                        name="monto"
                     />
                     {errors.monto_prestamo?.type === "required" && <P>El campo es obligatorio</P>}
                     {errors.monto_prestamo?.type === "validate" && <P>Monto entre $5.000 y $100.000</P>}
@@ -147,13 +163,14 @@ const ContactUs = () => {
                             required: true,
                             validate: cantidadCuotas,
                         })}
+                        name="cuotas"
                     />
                     {errors.n_cuotas?.type === "required" && <P>El campo es obligatorio</P>}
                     {errors.n_cuotas?.type === "validate" && <P>Máximo 12 cuotas</P>}
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <hr />
-                    <textarea className="form-control" rows="5" id="comentarios" name="comentarios" placeholder="Deje aquí su mensaje" {...register("mensaje")}></textarea>
+                    <textarea className="form-control" rows="5" id="comentarios" name="mensaje" placeholder="Deje aquí su mensaje" {...register("mensaje")}></textarea>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <ReCAPTCHA ref={captcha} sitekey="6LdRwdwjAAAAAJVOgCpJoA5qBkMeHkfpSm5t1eFz" onChange={onChange} />
