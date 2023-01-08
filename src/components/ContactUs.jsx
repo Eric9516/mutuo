@@ -7,6 +7,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { cantidadCuotas, montoPrestamo } from "../validations/validator.js";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 AOS.init();
 
@@ -31,6 +32,17 @@ const ContactUs = () => {
                 .sendForm("service_arcn9qh", "template_6wsatef", e.target, "VX9SWecCA8TT-C6kr")
                 .then((response) => console.log(response))
                 .catch((error) => console.log(error));
+            Swal.fire({
+                title: "Mensaje enviado con exito.",
+                text: "Nos pondremos en contacto con usted a la brevedad.",
+                icon: "success",
+                confirmButtonColor: "#3085d6",
+                confirmButtonText: "Volver",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.reload();
+                }
+            });
         } else {
             setCaptchaValido(false);
             e.preventDefault();
