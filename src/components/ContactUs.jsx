@@ -13,7 +13,6 @@ const ContactUs = () => {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm();
 
@@ -28,7 +27,7 @@ const ContactUs = () => {
 
     const submit = (data, e) => {
         if (captcha.current.getValue()) {
-            console.log(data);
+            console.log(data.nombre, data.apellido);
         } else {
             setCaptchaValido(false);
             e.preventDefault();

@@ -28,7 +28,7 @@ const PorqueElegirnos = () => {
                 </DivContainer>
                 <LogoWhatsapp>
                     <a href="https://wa.link/ubocaj" target="_blank" rel="noreferrer">
-                        <RiWhatsappFill color="green" size="lg" />
+                        <RiWhatsappFill color="green" size="5em" />
                     </a>
                 </LogoWhatsapp>
             </StyledAllHome>
