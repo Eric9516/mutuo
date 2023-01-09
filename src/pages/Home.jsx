@@ -4,14 +4,17 @@ import ContactUs from "../components/ContactUs";
 import Cotizador from "../components/Cotizador";
 import PorqueElegirnos from "../components/PorqueElegirnos";
 import Footer from "../components/Footer";
+import ValoresProvider from "../context/valoresContext.jsx";
 
 const Home = () => {
     return (
         <>
             <AboutUs />
             <PorqueElegirnos />
-            <Cotizador />
-            <ContactUs />
+            <ValoresProvider>
+                <Cotizador />
+                <ContactUs />
+            </ValoresProvider>
             <Footer />
         </>
     );

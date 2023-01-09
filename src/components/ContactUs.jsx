@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Form } from "react-bootstrap";
 import { StyledDiv, StyledForm, StyledInput, StyledButton, Myh2, P } from "../Styles/StyledContactUs.js";
 import AOS from "aos";
@@ -8,12 +8,14 @@ import { useForm } from "react-hook-form";
 import { cantidadCuotas, localidad, montoPrestamo } from "../validations/validator.js";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import { ValoresContext } from "../context/valoresContext.jsx";
 
 AOS.init();
 
 const ContactUs = () => {
     const [captchaValido, setCaptchaValido] = useState(null);
     const captcha = useRef(null);
+    const context = useContext(ValoresContext);
 
     const {
         register,
@@ -154,7 +156,7 @@ const ContactUs = () => {
                     <Form.Label>Monto solicitado</Form.Label>
                     <StyledInput
                         type="number"
-                        placeholder="Mínimo $5.000 máximo $100.000"
+                        value={context.monto}
                         {...register("monto", {
                             required: true,
                             validate: montoPrestamo,
@@ -168,7 +170,7 @@ const ContactUs = () => {
                     <Form.Label>Cantidad de cuotas</Form.Label>
                     <StyledInput
                         type="number"
-                        placeholder="Hasta en 12 cuotas"
+                        value={context.cuota}
                         {...register("cuotas", {
                             required: true,
                             validate: cantidadCuotas,

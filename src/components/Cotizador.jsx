@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { StyledCotAll, Titulo, DivCentral, DivIndividual, DivBoton, Divh4 } from "../Styles/StyledCotizador.js";
 import { Button } from "react-bootstrap";
 import { values } from "./../utils/Values.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ValoresContext } from "../context/valoresContext.jsx";
 
 AOS.init();
 
 const Cotizador = () => {
     const [cuotas, setCuotas] = useState(3);
     const [cantidad, setCantidad] = useState(5000);
+    const context = useContext(ValoresContext);
+
+    useEffect(() => {
+        context.setMonto(cantidad);
+        context.setCuota(cuotas);
+    });
 
     const valor = values.find((item) => item.amount === cantidad);
     const valores = valor.quotes;
