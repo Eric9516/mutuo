@@ -1,5 +1,12 @@
 import React, { useContext, useState, useEffect } from "react";
-import { StyledCotAll, Titulo, DivCentral, DivIndividual, DivBoton, Divh4 } from "../Styles/StyledCotizador.js";
+import {
+    StyledCotAll,
+    Titulo,
+    DivCentral,
+    DivIndividual,
+    DivBoton,
+    Divh4,
+} from "../Styles/StyledCotizador.js";
 import { Button } from "react-bootstrap";
 import { values } from "./../utils/Values.js";
 import AOS from "aos";

@@ -1,7 +1,12 @@
 import React from "react";
 import Card from "../utils/Card";
 import { RiWhatsappFill } from "react-icons/ri";
-import { StyledAllHome, LogoWhatsapp, DivContainer, StyledTitle } from "../Styles/StyledPorqueElegirnos";
+import {
+    StyledAllHome,
+    LogoWhatsapp,
+    DivContainer,
+    StyledTitle,
+} from "../Styles/StyledPorqueElegirnos";
 import { whyChooseUs, easily } from "../utils/itemsCard.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,7 +20,14 @@ const PorqueElegirnos = () => {
                 <StyledTitle data-aos="fade-left">Por que elegirnos?</StyledTitle>
                 <DivContainer>
                     {whyChooseUs.map((item, index) => {
-                        return <Card key={index} icono={item.icono} txtFront={item.textoFront} txtBack={item.textoBack} />;
+                        return (
+                            <Card
+                                key={index}
+                                icono={item.icono}
+                                txtFront={item.textoFront}
+                                txtBack={item.textoBack}
+                            />
+                        );
                     })}
                 </DivContainer>
                 <StyledTitle id="requisitos" data-aos="fade-right">
@@ -23,7 +35,14 @@ const PorqueElegirnos = () => {
                 </StyledTitle>
                 <DivContainer>
                     {easily.map((item, index) => {
-                        return <Card key={index} icono={item.icono} txtFront={item.textoFront} txtBack={item.textoBack} />;
+                        return (
+                            <Card
+                                key={index}
+                                icono={item.icono}
+                                txtFront={item.textoFront}
+                                txtBack={item.textoBack}
+                            />
+                        );
                     })}
                 </DivContainer>
                 <LogoWhatsapp>

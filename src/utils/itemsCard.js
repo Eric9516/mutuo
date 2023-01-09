@@ -10,12 +10,14 @@ export const whyChooseUs = [
     {
         icono: <BsFillStopwatchFill size="4em" />,
         textoFront: "Solicitud simple y 100% online",
-        textoBack: "Contactanos por whatsapp haciendo click en el logo a la derecha o completando el formulario y nos pondremos en contacto a la bravedad.",
+        textoBack:
+            "Contactanos por whatsapp haciendo click en el logo a la derecha o completando el formulario y nos pondremos en contacto a la bravedad.",
     },
     {
         icono: <FaDollarSign size="4em" />,
         textoFront: "Acreditación inmediata",
-        textoBack: "Si cumplis con los requisitos, en menos de 24hs estará disponible el dinero para pasar a retirar por nuestras oficinas o te lo transferimos a tu cuenta.",
+        textoBack:
+            "Si cumplis con los requisitos, en menos de 24hs estará disponible el dinero para pasar a retirar por nuestras oficinas o te lo transferimos a tu cuenta.",
     },
     {
         icono: <FaPercent size="4em" />,
@@ -33,7 +35,8 @@ export const easily = [
     {
         icono: <AiFillBank size="4em" />,
         textoFront: "Trabajo en relación de dependencia o monotriburo",
-        textoBack: "En caso de sueldo mensual enviar el último recibo, en caso de sueldo quincenal enviar los recibos de las ultimas dos quincenas.",
+        textoBack:
+            "En caso de sueldo mensual enviar el último recibo, en caso de sueldo quincenal enviar los recibos de las ultimas dos quincenas.",
     },
     {
         icono: <MdWork size="4em" />,
@@ -43,7 +46,8 @@ export const easily = [
     {
         icono: <RxCountdownTimer size="4em" />,
         textoFront: "Tener buen comportamiento creditico los últimos 12 meses",
-        textoBack: "No presentar embargos ni deudas con otras agencias financieras en los últimos 12 meses.",
+        textoBack:
+            "No presentar embargos ni deudas con otras agencias financieras en los últimos 12 meses.",
     },
     {
         icono: <BsFillFilePersonFill size="4em" />,

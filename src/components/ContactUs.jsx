@@ -1,6 +1,13 @@
 import React, { useContext, useRef, useState } from "react";
 import { Form } from "react-bootstrap";
-import { StyledDiv, StyledForm, StyledInput, StyledButton, Myh2, P } from "../Styles/StyledContactUs.js";
+import {
+    StyledDiv,
+    StyledForm,
+    StyledInput,
+    StyledButton,
+    Myh2,
+    P,
+} from "../Styles/StyledContactUs.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -79,7 +86,9 @@ const ContactUs = () => {
                         name="apellido"
                     />
                     {errors.apellido?.type === "required" && <P>El campo es obligatorio</P>}
-                    {errors.apellido?.type === "minLength" && <P>Debe tener 3 letras como mínimo</P>}
+                    {errors.apellido?.type === "minLength" && (
+                        <P>Debe tener 3 letras como mínimo</P>
+                    )}
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail" data-aos="fade-right">
                     <Form.Label>DNI</Form.Label>
@@ -103,7 +112,9 @@ const ContactUs = () => {
                         name="localidad"
                     />
                     {errors.localidad?.type === "required" && <P>El campo es obligatorio</P>}
-                    {errors.localidad?.type === "validate" && <P>Servicio disponible para personas de Leones, Córdoba</P>}
+                    {errors.localidad?.type === "validate" && (
+                        <P>Servicio disponible para personas de Leones, Córdoba</P>
+                    )}
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail" data-aos="fade-right">
                     <Form.Label>Dirección</Form.Label>
@@ -138,7 +149,9 @@ const ContactUs = () => {
                         })}
                         name="condicion_laboral"
                     />
-                    {errors.condicion_laboral?.type === "required" && <P>El campo es obligatorio</P>}
+                    {errors.condicion_laboral?.type === "required" && (
+                        <P>El campo es obligatorio</P>
+                    )}
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <Form.Label>Antigüedad</Form.Label>
@@ -182,10 +195,21 @@ const ContactUs = () => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <hr />
-                    <textarea className="form-control" rows="5" id="comentarios" name="mensaje" placeholder="Deje aquí su mensaje" {...register("mensaje")}></textarea>
+                    <textarea
+                        className="form-control"
+                        rows="5"
+                        id="comentarios"
+                        name="mensaje"
+                        placeholder="Deje aquí su mensaje"
+                        {...register("mensaje")}
+                    ></textarea>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
-                    <ReCAPTCHA ref={captcha} sitekey="6LdRwdwjAAAAAJVOgCpJoA5qBkMeHkfpSm5t1eFz" onChange={onChange} />
+                    <ReCAPTCHA
+                        ref={captcha}
+                        sitekey="6LdRwdwjAAAAAJVOgCpJoA5qBkMeHkfpSm5t1eFz"
+                        onChange={onChange}
+                    />
                     {captchaValido === false && <P>Por favor acepta el captcha</P>}
                 </Form.Group>
                 <StyledButton variant="primary" type="submit" className="btn">

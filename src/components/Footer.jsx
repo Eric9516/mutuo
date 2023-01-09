@@ -1,5 +1,10 @@
 import React from "react";
-import { BsFacebook, BsInstagram, BsFillTelephoneFill, BsFillArrowUpCircleFill } from "react-icons/bs";
+import {
+    BsFacebook,
+    BsInstagram,
+    BsFillTelephoneFill,
+    BsFillArrowUpCircleFill,
+} from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { A, Div1, Div2, DivContenedor, DivFooter, Redes, Ul } from "../Styles/StyledFooter.js";
 
@@ -13,12 +18,20 @@ const Footer = () => {
                             <h5>Encontranos en nuestras redes sociales</h5>
                             <Redes>
                                 <li>
-                                    <a href="https://www.facebook.com/profile.php?id=100075226601331" target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.facebook.com/profile.php?id=100075226601331"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         <BsFacebook size="2em" color="blue" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/creditosmutuo/?hl=es" target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.instagram.com/creditosmutuo/?hl=es"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         <BsInstagram size="2em" />
                                     </a>
                                 </li>
