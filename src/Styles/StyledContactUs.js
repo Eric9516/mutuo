@@ -74,3 +74,7 @@ export const StyledInput = styled(FormControl)`
 export const P = styled.p`
     color: red;
 `;
+
+export const A = styled.a`
+    text-decoration: none;
+`;

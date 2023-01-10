@@ -49,7 +49,7 @@ const Cotizador = () => {
 
     return (
         <StyledCotAll id="cotizador">
-            <Titulo data-aos="fade-left">Cotizador</Titulo>
+            <Titulo data-aos="fade-left">Un préstamo a tu medida</Titulo>
             <DivCentral data-aos="fade-up">
                 <DivIndividual>
                     <Divh4>

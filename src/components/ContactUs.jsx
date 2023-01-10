@@ -7,12 +7,13 @@ import {
     StyledButton,
     Myh2,
     P,
+    A,
 } from "../Styles/StyledContactUs.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
-import { cantidadCuotas, localidad, montoPrestamo } from "../validations/validator.js";
+import { cantidadCuotas, localidad } from "../validations/validator.js";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { ValoresContext } from "../context/valoresContext.jsx";
@@ -167,29 +168,24 @@ const ContactUs = () => {
                 <hr />
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <Form.Label>Monto solicitado</Form.Label>
-                    <StyledInput
-                        type="number"
-                        value={context.monto}
-                        {...register("monto", {
-                            required: true,
-                            validate: montoPrestamo,
-                        })}
-                        name="monto"
-                    />
-                    {errors.monto?.type === "required" && <P>El campo es obligatorio</P>}
-                    {errors.monto?.type === "validate" && <P>Monto entre $5.000 y $100.000</P>}
+                    <A href="#cotizador">
+                        <StyledInput type="number" value={context.monto} name="monto" />
+                    </A>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <Form.Label>Cantidad de cuotas</Form.Label>
-                    <StyledInput
-                        type="number"
-                        value={context.cuota}
-                        {...register("cuotas", {
-                            required: true,
-                            validate: cantidadCuotas,
-                        })}
-                        name="cuotas"
-                    />
+                    <A href="#cotizador">
+                        <StyledInput
+                            type="number"
+                            value={context.cuota}
+                            {...register("cuotas", {
+                                required: true,
+                                validate: cantidadCuotas,
+                            })}
+                            name="cuotas"
+                        />
+                    </A>
+
                     {errors.cuotas?.type === "required" && <P>El campo es obligatorio</P>}
                     {errors.cuotas?.type === "validate" && <P>Máximo 12 cuotas</P>}
                 </Form.Group>

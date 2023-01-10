@@ -40,10 +40,14 @@ const Footer = () => {
                         <Ul>
                             <h5>Contactanos</h5>
                             <li>
-                                <BsFillTelephoneFill size="1.5em" /> 3472-469992
+                                <A href="tel:+543472469992">
+                                    <BsFillTelephoneFill size="1.5em" /> 3472-469992
+                                </A>
                             </li>
                             <li>
-                                <MdEmail size="1.5em" /> creditosmutuo@gmail.com
+                                <A href="mailto:creditosmutuo@gmail.com">
+                                    <MdEmail size="1.5em" /> creditosmutuo@gmail.com
+                                </A>
                             </li>
                         </Ul>
                     </Div1>
