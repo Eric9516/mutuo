@@ -67,14 +67,33 @@ export const StyledButton = styled(Button)`
     margin-bottom: 20px;
 `;
 
-export const StyledInput = styled(FormControl)`
-    background-color: rgb(255, 255, 228);
-`;
-
 export const P = styled.p`
     color: red;
 `;
 
 export const A = styled.a`
     text-decoration: none;
+`;
+
+export const StyledInput = styled(FormControl)`
+    width: 24vw;
+
+    @media screen and (max-width: 960px) {
+        width: 100%;
+    }
+`;
+
+export const Div = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 960px) {
+        flex-direction: column;
+    }
+`;
+
+export const DivCondicionLaboral = styled.div`
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
 `;
