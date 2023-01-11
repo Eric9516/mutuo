@@ -13,7 +13,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
-import { cantidadCuotas, localidad } from "../validations/validator.js";
+import { localidad } from "../validations/validator.js";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { ValoresContext } from "../context/valoresContext.jsx";
@@ -175,15 +175,7 @@ const ContactUs = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword" data-aos="fade-right">
                     <Form.Label>Cantidad de cuotas</Form.Label>
                     <A href="#cotizador">
-                        <StyledInput
-                            type="number"
-                            value={context.cuota}
-                            {...register("cuotas", {
-                                required: true,
-                                validate: cantidadCuotas,
-                            })}
-                            name="cuotas"
-                        />
+                        <StyledInput type="number" value={context.cuota} name="cuotas" />
                     </A>
 
                     {errors.cuotas?.type === "required" && <P>El campo es obligatorio</P>}
