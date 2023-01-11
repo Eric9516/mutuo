@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Card.css";
+import "../Styles/card.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
