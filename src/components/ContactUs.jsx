@@ -228,7 +228,21 @@ const ContactUs = () => {
                             )}
                         </Form.Group>
                     )}
+                    <Form.Group
+                        className="mb-3"
+                        controlId="formBasicPassword"
+                        data-aos="fade-right"
+                    >
+                        <Form.Label>Antigüedad</Form.Label>
+                        <StyledInput
+                            type="number"
+                            {...register("antiguedad", { required: true })}
+                            name="antiguedad"
+                        />
+                        {errors.antiguedad?.type === "required" && <P>El campo es obligatorio</P>}
+                    </Form.Group>
                 </DivCondicionLaboral>
+
                 <hr />
                 <Div>
                     <Form.Group
