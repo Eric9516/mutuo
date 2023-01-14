@@ -171,6 +171,7 @@ const ContactUs = () => {
                                 label="Monotributista"
                                 name="group1"
                                 type={type}
+                                required
                                 onClick={() => {
                                     setCondicionLaboral(false);
                                     setValorInput("Monotributista");
@@ -182,6 +183,7 @@ const ContactUs = () => {
                                 label="En relacion de dependencia"
                                 name="group1"
                                 type={type}
+                                required
                                 onClick={() => {
                                     setCondicionLaboral(false);
                                     setValorInput("En relacion de dependencia");
@@ -193,6 +195,7 @@ const ContactUs = () => {
                                 label="Otro"
                                 name="group1"
                                 type={type}
+                                required
                                 onClick={() => {
                                     setCondicionLaboral(true);
                                     setValorInput("");
@@ -214,7 +217,12 @@ const ContactUs = () => {
                             data-aos="fade-right"
                         >
                             <Form.Label>Defina su condicion laboral</Form.Label>
-                            <StyledInput type="text" name="condicion_laboral" />
+                            <StyledInput
+                                type="text"
+                                {...register("condicion", { required: true })}
+                                name="condicion"
+                            />
+
                             {errors.condicion?.type === "required" && (
                                 <P>El campo es obligatorio</P>
                             )}
