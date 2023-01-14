@@ -16,13 +16,6 @@
 
 @media screen and (max-width: 960px) {
     .card {
-        width: 50vw;
-        height: 30vh;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .card {
         width: 65vw;
         height: 45vh;
     }
