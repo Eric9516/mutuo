@@ -15,19 +15,11 @@ export const StyledDiv = styled.div`
     padding-top: 30px;
 
     @media screen and (max-width: 1100px) {
+        background-image: none;
         background-color: rgb(230, 228, 228);
-        background-image: url(${image});
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: 300px;
-    }
-
-    @media screen and (max-width: 800px) {
-        background-color: rgb(230, 228, 228);
-        background-image: url(${image});
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: 200px;
     }
 `;
 

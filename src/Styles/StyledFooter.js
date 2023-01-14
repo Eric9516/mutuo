@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import image from "../img/leon2.png";
 
 export const DivFooter = styled.div`
     display: flex;
@@ -6,6 +7,13 @@ export const DivFooter = styled.div`
     justify-content: space-evenly;
     align-items: center;
     padding: 40px;
+
+    @media screen and (max-width: 960px) {
+        background-image: url(${image});
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 200px;
+    }
 `;
 
 export const DivContenedor = styled.div`
@@ -14,6 +22,7 @@ export const DivContenedor = styled.div`
     flex-direction: column;
 
     @media screen and (max-width: 960px) {
+        width: 100vw;
         justify-content: center;
         align-items: center;
     }
