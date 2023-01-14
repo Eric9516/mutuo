@@ -5,6 +5,7 @@ import {
     BsFillTelephoneFill,
     BsFillArrowUpCircleFill,
 } from "react-icons/bs";
+import { RiWhatsappFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 import { A, Div1, Div2, DivContenedor, DivFooter, Redes, Ul } from "../Styles/StyledFooter.js";
 
@@ -47,6 +48,11 @@ const Footer = () => {
                             <li>
                                 <A href="mailto:creditosmutuo@gmail.com">
                                     <MdEmail size="1.5em" /> creditosmutuo@gmail.com
+                                </A>
+                            </li>
+                            <li>
+                                <A href="https://wa.link/ubocaj">
+                                    <RiWhatsappFill size="1.5em" /> Whatsapp
                                 </A>
                             </li>
                         </Ul>
