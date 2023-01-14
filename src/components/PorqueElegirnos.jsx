@@ -44,7 +44,6 @@ const PorqueElegirnos = () => {
                         );
                     })}
                 </DivContainer>
-                
             </StyledAllHome>
         </>
     );
