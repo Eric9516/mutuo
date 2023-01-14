@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./Card";
-import { RiWhatsappFill } from "react-icons/ri";
 import {
     StyledAllHome,
     LogoWhatsapp,
@@ -45,11 +44,7 @@ const PorqueElegirnos = () => {
                         );
                     })}
                 </DivContainer>
-                <LogoWhatsapp>
-                    <a href="https://wa.link/ubocaj" target="_blank" rel="noreferrer">
-                        <RiWhatsappFill color="green" size="5em" />
-                    </a>
-                </LogoWhatsapp>
+                
             </StyledAllHome>
         </>
     );
