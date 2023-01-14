@@ -219,11 +219,11 @@ const ContactUs = () => {
                             <Form.Label>Defina su condicion laboral</Form.Label>
                             <StyledInput
                                 type="text"
-                                {...register("condicion", { required: true })}
-                                name="condicion"
+                                {...register("condicion_laboral", { required: true })}
+                                name="condicion_laboral"
                             />
 
-                            {errors.condicion?.type === "required" && (
+                            {errors.condicion_laboral?.type === "required" && (
                                 <P>El campo es obligatorio</P>
                             )}
                         </Form.Group>
