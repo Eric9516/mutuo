@@ -21,6 +21,13 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .card {
+        width: 65vw;
+        height: 45vh;
+    }
+}
+
 .card div {
     position: absolute;
     width: 100%;
