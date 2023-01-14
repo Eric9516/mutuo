@@ -35,6 +35,10 @@ export const StyledForm = styled(Form)`
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 960px) {
+        width: 70vw;
+    }
 `;
 
 export const Myh2 = styled.h2`
