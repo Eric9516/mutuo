@@ -2,7 +2,6 @@ import React from "react";
 import Card from "./Card";
 import {
     StyledAllHome,
-    LogoWhatsapp,
     DivContainer,
     StyledTitle,
 } from "../Styles/StyledPorqueElegirnos";
