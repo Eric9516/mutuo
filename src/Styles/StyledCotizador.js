@@ -42,6 +42,7 @@ export const DivIndividual = styled.div`
     align-items: center;
 
     @media screen and (max-width: 960px) {
+        width: 40%;
         flex-direction: column;
         justify-content: center;
     }

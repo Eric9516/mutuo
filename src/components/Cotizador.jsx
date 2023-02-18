@@ -7,6 +7,7 @@ import {
     DivBoton,
     Divh4,
 } from "../Styles/StyledCotizador.js";
+import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
 import { values } from "./../utils/Values.js";
 import AOS from "aos";
@@ -19,6 +20,7 @@ const Cotizador = () => {
     const [cuotas, setCuotas] = useState(3);
     const [cantidad, setCantidad] = useState(5000);
     const context = useContext(ValoresContext);
+    const [pago, setPago] = useState("");
 
     useEffect(() => {
         context.setMonto(cantidad);
@@ -27,6 +29,7 @@ const Cotizador = () => {
 
     const valor = values.find((item) => item.amount === cantidad);
     const valores = valor.quotes;
+    let pagoEfectivo = valores[cuotas] * 1.1;
 
     const sumar = () => {
         setCuotas(cuotas + 3);
@@ -77,7 +80,29 @@ const Cotizador = () => {
                         </Button>
                     </DivBoton>
                 </DivIndividual>
-                <h3>Valor de la cuota: ${valores[cuotas]}</h3>
+                <p>¿De que forma pagarías tu cuota?</p>
+                <DivIndividual>
+                    <div>
+                        <label>Efectivo</label>
+                        <input
+                            type="radio"
+                            name="formaDePago"
+                            id=""
+                            onClick={() => setPago(false)}
+                        />
+                    </div>
+                    <div>
+                        <label>Transferencia</label>
+                        <input
+                            type="radio"
+                            name="formaDePago"
+                            id=""
+                            onClick={() => setPago(true)}
+                        />
+                    </div>
+                </DivIndividual>
+                {pago && <h3>Valor de la cuota: ${valores[cuotas]}</h3>}
+                {!pago && <h3>Valor de la cuota: ${Math.trunc(pagoEfectivo)}</h3>}
                 <Button variant="primary" href="#contactUs">
                     LO QUIERO!!
                 </Button>{" "}
