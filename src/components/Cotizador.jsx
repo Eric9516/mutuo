@@ -80,7 +80,9 @@ const Cotizador = () => {
                         </Button>
                     </DivBoton>
                 </DivIndividual>
-                <p>¿De que forma pagarías tu cuota?</p>
+                <h6>
+                    <strong>¿De que forma pagarías tu cuota?</strong>
+                </h6>
                 <DivIndividual>
                     <div>
                         <label>Efectivo</label>
