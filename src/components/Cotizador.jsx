@@ -7,12 +7,13 @@ import {
     DivBoton,
     Divh4,
 } from "../Styles/StyledCotizador.js";
-import Form from "react-bootstrap/Form";
 import { Button } from "react-bootstrap";
 import { values } from "./../utils/Values.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ValoresContext } from "../context/valoresContext.jsx";
+import { AiFillQuestionCircle } from "react-icons/ai";
+import Swal from "sweetalert2";
 
 AOS.init();
 
@@ -50,6 +51,15 @@ const Cotizador = () => {
         cantidad === 5000 ? setCantidad(5000) : menosCantidad();
     };
 
+    const help = () => {
+        Swal.fire({
+            text: "Si selecciona transferencia debera pagar la todalidad de las cuotas del préstamo de esa forma.",
+            icon: "info",
+            confirmButtonColor: "#3085d6",
+            confirmButtonText: "Volver",
+        }).then((result) => {});
+    };
+
     return (
         <StyledCotAll id="cotizador">
             <Titulo data-aos="fade-left">Un préstamo a tu medida</Titulo>
@@ -82,6 +92,7 @@ const Cotizador = () => {
                 </DivIndividual>
                 <h6>
                     <strong>¿De que forma pagarías tu cuota?</strong>
+                    <AiFillQuestionCircle fontSize={25} color="darkRed" onClick={help} />
                 </h6>
                 <DivIndividual>
                     <div>
