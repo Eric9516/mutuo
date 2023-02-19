@@ -59,7 +59,7 @@ export const DivCentral = styled.div`
     }
     @media screen and (min-width: 1500px) {
         width: 40vw;
-        height: 65vh;
+        height: 50vh;
         padding: 10px;
         gap: 30px;
         margin-bottom: 20px;
