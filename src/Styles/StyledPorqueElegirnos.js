@@ -11,6 +11,7 @@ export const StyledAllHome = styled.div`
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-bottom: 20px;
 
     @media screen and (min-width: 1800px) {
         gap: 35px;
