@@ -16,10 +16,6 @@ export const Titulo = styled.h1`
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    /* @media screen and (min-height: 700px) {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    } */
 `;
 
 export const DivCentral = styled.div`
@@ -50,16 +46,16 @@ export const DivCentral = styled.div`
         gap: 30px;
         margin-bottom: 20px;
     }
-    @media screen and (min-height: 700px) {
-        width: 80vw;
-        height: 65vh;
+    @media screen and (min-width: 1500px) {
+        width: 40vw;
+        height: 50vh;
         padding: 10px;
         gap: 30px;
         margin-bottom: 20px;
     }
-    @media screen and (min-width: 1500px) {
-        width: 40vw;
-        height: 50vh;
+    @media screen and (min-height: 700px) {
+        width: 80vw;
+        height: 65vh;
         padding: 10px;
         gap: 30px;
         margin-bottom: 20px;

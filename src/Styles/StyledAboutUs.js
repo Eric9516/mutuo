@@ -9,6 +9,7 @@ export const StyledDiv = styled.div`
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: bottom left;
+    
 
     @media screen and (min-width: 1800px) {
         background-color: #fff;
