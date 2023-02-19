@@ -16,6 +16,10 @@ export const Titulo = styled.h1`
         margin-top: 40px;
         margin-bottom: 40px;
     }
+    /* @media screen and (min-height: 700px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } */
 `;
 
 export const DivCentral = styled.div`
@@ -39,9 +43,16 @@ export const DivCentral = styled.div`
         padding: 10px;
         gap: 30px;
     }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 400px) {
         width: 95vw;
         height: 90vh;
+        padding: 10px;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-height: 700px) {
+        width: 80vw;
+        height: 65vh;
         padding: 10px;
         gap: 30px;
         margin-bottom: 20px;
