@@ -57,6 +57,13 @@ export const DivCentral = styled.div`
         gap: 30px;
         margin-bottom: 20px;
     }
+    @media screen and (min-width: 1500px) {
+        width: 40vw;
+        height: 65vh;
+        padding: 10px;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
 `;
 
 export const DivIndividual = styled.div`
