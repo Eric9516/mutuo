@@ -38,7 +38,7 @@ export const StyledDiv = styled.div`
     }
 
     @media screen and (max-width: 400px) {
-        height: 80vh;
+        height: 120vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,11 +49,8 @@ export const StyledDiv = styled.div`
         height: 100vh;
     }
 
-    @media screen and (max-height: 700px) {
-        height: 105vh;
-    }
-    /* @media screen and (max-height: 750px) {
-        height: 95vh;
+    /* @media screen and (min-height: 600px) and (max-height: 700px) {
+        height: 120vh;
     } */
 `;
 export const StyledChildDiv = styled.div`
@@ -114,17 +111,16 @@ export const StyledChildDiv = styled.div`
         top: 30px;
     }
 
-    @media screen and (max-width: 450px) and (max-height: 800px) {
+    /* @media screen and (max-width: 450px) and (max-height: 800px) {
         width: 90%;
         height: 40vh;
         padding: 0;
-    }
+    } */
     @media screen and (max-width: 300px) {
         width: 60vw;
     }
-    @media screen and (max-height: 700px) {
-        top: 15px;
-        height: 55vh;
+    @media screen and (max-height: 550px) {
+        height: 60vh;
     }
 `;
 export const Styledh3 = styled.p`
