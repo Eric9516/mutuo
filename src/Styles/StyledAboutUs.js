@@ -48,6 +48,13 @@ export const StyledDiv = styled.div`
     @media screen and (max-width: 300px) {
         height: 100vh;
     }
+
+    @media screen and (max-height: 700px) {
+        height: 105vh;
+    }
+    /* @media screen and (max-height: 750px) {
+        height: 95vh;
+    } */
 `;
 export const StyledChildDiv = styled.div`
     width: 80vh;
@@ -114,6 +121,10 @@ export const StyledChildDiv = styled.div`
     }
     @media screen and (max-width: 300px) {
         width: 60vw;
+    }
+    @media screen and (max-height: 700px) {
+        top: 15px;
+        height: 55vh;
     }
 `;
 export const Styledh3 = styled.p`
