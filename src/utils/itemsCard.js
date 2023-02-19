@@ -11,7 +11,7 @@ export const whyChooseUs = [
         icono: <BsFillStopwatchFill size="4em" />,
         textoFront: "Solicitud simple y 100% online",
         textoBack:
-            "Contactanos por whatsapp haciendo click en el logo a la derecha o completando el formulario y nos pondremos en contacto a la bravedad.",
+            "Contactanos por whatsapp haciendo click en el logo a la derecha o completando el formulario y nos pondremos en contacto a la brevedad.",
     },
     {
         icono: <FaDollarSign size="4em" />,
