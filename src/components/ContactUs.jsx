@@ -260,6 +260,14 @@ const ContactUs = () => {
                         controlId="formBasicPassword"
                         data-aos="fade-right"
                     >
+                        <StyledInput type="text" value={context.pago} hidden name="pago" />
+                    </Form.Group>
+
+                    <Form.Group
+                        className="mb-3"
+                        controlId="formBasicPassword"
+                        data-aos="fade-right"
+                    >
                         <Form.Label>Cantidad de cuotas</Form.Label>
                         <A href="#cotizador">
                             <StyledInput type="number" value={context.cuota} name="cuotas" />

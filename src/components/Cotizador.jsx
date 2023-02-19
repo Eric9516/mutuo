@@ -6,6 +6,8 @@ import {
     DivIndividual,
     DivBoton,
     Divh4,
+    Transf,
+    Efect,
 } from "../Styles/StyledCotizador.js";
 import { Button } from "react-bootstrap";
 import { values } from "./../utils/Values.js";
@@ -20,12 +22,13 @@ AOS.init();
 const Cotizador = () => {
     const [cuotas, setCuotas] = useState(3);
     const [cantidad, setCantidad] = useState(5000);
-    const context = useContext(ValoresContext);
     const [pago, setPago] = useState("");
+    const context = useContext(ValoresContext);
 
     useEffect(() => {
         context.setMonto(cantidad);
         context.setCuota(cuotas);
+        context.setPago(pago);
     });
 
     const valor = values.find((item) => item.amount === cantidad);
@@ -64,6 +67,30 @@ const Cotizador = () => {
         <StyledCotAll id="cotizador">
             <Titulo data-aos="fade-left">Un préstamo a tu medida</Titulo>
             <DivCentral data-aos="fade-up">
+                <h6>
+                    <strong>¿De que forma pagarías tu cuota?</strong>
+                    <AiFillQuestionCircle fontSize={25} color="darkRed" onClick={help} />
+                </h6>
+                <DivIndividual>
+                    <div>
+                        <label>Efectivo</label>
+                        <input
+                            type="radio"
+                            name="formaDePago"
+                            id=""
+                            onClick={() => setPago("efectivo")}
+                        />
+                    </div>
+                    <div>
+                        <label>Transferencia</label>
+                        <input
+                            type="radio"
+                            name="formaDePago"
+                            id=""
+                            onClick={() => setPago("transferencia")}
+                        />
+                    </div>
+                </DivIndividual>
                 <DivIndividual>
                     <Divh4>
                         <h4>Monto: ${cantidad}</h4>
@@ -90,32 +117,13 @@ const Cotizador = () => {
                         </Button>
                     </DivBoton>
                 </DivIndividual>
-                <h6>
-                    <strong>¿De que forma pagarías tu cuota?</strong>
-                    <AiFillQuestionCircle fontSize={25} color="darkRed" onClick={help} />
-                </h6>
-                <DivIndividual>
-                    <div>
-                        <label>Efectivo</label>
-                        <input
-                            type="radio"
-                            name="formaDePago"
-                            id=""
-                            onClick={() => setPago(false)}
-                        />
-                    </div>
-                    <div>
-                        <label>Transferencia</label>
-                        <input
-                            type="radio"
-                            name="formaDePago"
-                            id=""
-                            onClick={() => setPago(true)}
-                        />
-                    </div>
-                </DivIndividual>
-                {pago && <h3>Valor de la cuota: ${valores[cuotas]}</h3>}
-                {!pago && <h3>Valor de la cuota: ${Math.trunc(pagoEfectivo)}</h3>}
+                {pago == "transferencia" && (
+                    <h3>
+                        Valor de la cuota: <Efect>${Math.trunc(pagoEfectivo)}</Efect> {"  "}
+                        <Transf>${valores[cuotas]}</Transf>
+                    </h3>
+                )}
+                {pago == "efectivo" && <h3>Valor de la cuota: ${Math.trunc(pagoEfectivo)}</h3>}
                 <Button variant="primary" href="#contactUs">
                     LO QUIERO!!
                 </Button>{" "}

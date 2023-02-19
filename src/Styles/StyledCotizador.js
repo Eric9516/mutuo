@@ -11,6 +11,11 @@ export const StyledCotAll = styled.div`
 
 export const Titulo = styled.h1`
     color: rgb(55, 55, 141);
+
+    @media screen and (max-width: 500px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 `;
 
 export const DivCentral = styled.div`
@@ -26,12 +31,20 @@ export const DivCentral = styled.div`
     justify-content: center;
     align-items: center;
     gap: 15px;
+    box-shadow: 0px 0px 6px 4px #777;
 
     @media screen and (max-width: 960px) {
         width: 80vw;
         height: 70vh;
         padding: 10px;
         gap: 30px;
+    }
+    @media screen and (max-width: 500px) {
+        width: 95vw;
+        height: 90vh;
+        padding: 10px;
+        gap: 30px;
+        margin-bottom: 20px;
     }
 `;
 
@@ -68,4 +81,14 @@ export const Divh4 = styled.div`
     @media screen and (max-width: 960px) {
         margin-bottom: 10px;
     }
+`;
+
+export const Transf = styled.strong`
+    color: #00a61a;
+`;
+
+export const Efect = styled.strong`
+    color: red;
+    font-weight: 400;
+    text-decoration: line-through;
 `;
