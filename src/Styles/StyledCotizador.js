@@ -39,6 +39,13 @@ export const DivCentral = styled.div`
         padding: 10px;
         gap: 30px;
     }
+    @media screen and (max-width: 350px) {
+        width: 95vw;
+        height: 100vh;
+        padding: 10px;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
     @media screen and (max-width: 400px) {
         width: 95vw;
         height: 90vh;
@@ -53,9 +60,9 @@ export const DivCentral = styled.div`
         gap: 30px;
         margin-bottom: 20px;
     }
-    @media screen and (min-height: 700px) {
+    @media screen and (max-height: 700px) {
         width: 80vw;
-        height: 65vh;
+        height: 80vh;
         padding: 10px;
         gap: 30px;
         margin-bottom: 20px;
