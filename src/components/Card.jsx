@@ -5,15 +5,15 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-const Card = (props) => {
+const Card = ({ icono, txtFront, txtBack }) => {
     return (
         <div className="card" data-aos="fade-up" data-aos-duration="900">
             <div className="front">
-                {props.icono}
-                <p>{props.txtFront}</p>
+                {icono}
+                <p>{txtFront}</p>
             </div>
             <div className="back">
-                <p>{props.txtBack}</p>
+                <p>{txtBack}</p>
             </div>
         </div>
     );

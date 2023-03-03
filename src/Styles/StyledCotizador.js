@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledCotAll = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 85vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -19,11 +20,12 @@ export const Titulo = styled.h1`
 `;
 
 export const DivCentral = styled.div`
-    width: 60vw;
-    height: 70vh;
+    width: 50vw;
+    height: 70%;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     border-radius: 10px;
     background-color: rgb(230, 228, 228);
     display: flex;
@@ -33,22 +35,16 @@ export const DivCentral = styled.div`
     gap: 15px;
     box-shadow: 0px 0px 6px 4px #777;
 
-    @media screen and (max-width: 960px) {
-        width: 80vw;
-        height: 70vh;
-        padding: 10px;
-        gap: 30px;
-    }
-    @media screen and (max-width: 350px) {
-        width: 95vw;
-        height: 100vh;
+    @media screen and (max-width: 400px) {
+        width: 90%;
+        height: auto;
         padding: 10px;
         gap: 30px;
         margin-bottom: 20px;
     }
-    @media screen and (max-width: 400px) {
-        width: 95vw;
-        height: 90vh;
+    @media screen and (max-width: 550px) {
+        width: 90%;
+        height: auto;
         padding: 10px;
         gap: 30px;
         margin-bottom: 20px;
@@ -56,13 +52,6 @@ export const DivCentral = styled.div`
     @media screen and (min-width: 1500px) {
         width: 40vw;
         height: 50vh;
-        padding: 10px;
-        gap: 30px;
-        margin-bottom: 20px;
-    }
-    @media screen and (max-height: 700px) {
-        width: 80vw;
-        height: 80vh;
         padding: 10px;
         gap: 30px;
         margin-bottom: 20px;
