@@ -260,7 +260,7 @@ const ContactUs = () => {
                         controlId="formBasicPassword"
                         data-aos="fade-right"
                     >
-                        <StyledInput type="text" value={context.pago} hidden name="pago" />
+                        <StyledInput type="text" value={context.pago} name="forma_pago" hidden />
                     </Form.Group>
 
                     <Form.Group
