@@ -120,13 +120,13 @@ const Cotizador = () => {
                         </Button>
                     </DivBoton>
                 </DivIndividual>
-                {pago == "transferencia" && (
+                {pago === "transferencia" && (
                     <h3>
                         Valor de la cuota: <Efect>${Math.trunc(pagoEfectivo)}</Efect> {"  "}
                         <Transf>${valores[cuotas]}</Transf>
                     </h3>
                 )}
-                {pago == "efectivo" && <h3>Valor de la cuota: ${Math.trunc(pagoEfectivo)}</h3>}
+                {pago === "efectivo" && <h3>Valor de la cuota: ${Math.trunc(pagoEfectivo)}</h3>}
                 <Button variant="primary" href="#contactUs">
                     LO QUIERO!!
                 </Button>{" "}
