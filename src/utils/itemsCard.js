@@ -34,7 +34,7 @@ export const whyChooseUs = [
 export const easily = [
     {
         icono: <AiFillBank size="4em" />,
-        textoFront: "Trabajo en relación de dependencia o monotriburo",
+        textoFront: "Trabajo en relación de dependencia o monotributo",
         textoBack:
             "En caso de sueldo mensual enviar el último recibo, en caso de sueldo quincenal enviar los recibos de las ultimas dos quincenas.",
     },
