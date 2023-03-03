@@ -1,5 +1,6 @@
 import React from "react";
 import { StyledDiv, StyledChildDiv, Styledh3 } from "../Styles/StyledAboutUs.js";
+import Whatsapp from "./Whatsapp.jsx";
 
 const AboutUs = () => {
     return (
@@ -11,6 +12,7 @@ const AboutUs = () => {
                     <br /> Cuotas fijas y en pesos.
                 </Styledh3>
             </StyledChildDiv>
+            <Whatsapp />
         </StyledDiv>
     );
 };

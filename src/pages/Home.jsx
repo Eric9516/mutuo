@@ -5,6 +5,7 @@ import Cotizador from "../components/Cotizador";
 import PorqueElegirnos from "../components/PorqueElegirnos";
 import Footer from "../components/Footer";
 import ValoresProvider from "../context/valoresContext.jsx";
+import Whatsapp from "../components/Whatsapp";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
                 <Cotizador />
                 <ContactUs />
             </ValoresProvider>
+   
             <Footer />
         </>
     );

@@ -7,7 +7,7 @@ export const WhatsappLogo = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #000;
     border-radius: 50%;
 
     /* @media screen and (min-width: 1800px) {

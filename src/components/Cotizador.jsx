@@ -87,7 +87,10 @@ const Cotizador = () => {
                             type="radio"
                             name="formaDePago"
                             id=""
-                            onClick={() => setPago("transferencia")}
+                            onClick={() => {
+                                setPago("transferencia");
+                                help();
+                            }}
                         />
                     </div>
                 </DivIndividual>
